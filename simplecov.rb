@@ -1,8 +1,8 @@
 require 'simplecov-cobertura'
-require 'simplecov-json'
+#require 'simplecov-json'
 require 'simplecov'
 SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter
-SimpleCov.formatter = SimpleCov::Formatter::JSONFormatter
+#SimpleCov.formatter = SimpleCov::Formatter::JSONFormatter
 SimpleCov.command_name 'Unit Tests'
 SimpleCov.start
 
