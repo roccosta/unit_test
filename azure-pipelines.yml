@@ -20,3 +20,9 @@ steps:
 
 - script: ruby simplecov.rb
   displayName: 'ruby simplecov.rb'
+
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: Cobertura
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
+    reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
